@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.fullContainer {
+
+    max-width: 100%;
+    height: calc(100% - 186px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.click {
+    width: 100%;
+    height: calc(100vh - 186px);
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click_none {
+    displey: none;
+}
+
+header {
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.sasIcon {
+    width: 9.5%;
+    height: 58px;
+    cursor: cell;
+}
+
+.search {
+    width: 70%;
+    border-style: none;
+    outline: none;
+}
+
+label {
+    width: 60%;
+    height: 40px;
+    border: 1px ridge gray;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+label img {
+    cursor: pointer;
+}
+
+.buyIcon > p {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.buyIcon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* 
+
+item_price */
+
+.contentBox {
+    width: calc(100% / 5 - 16px);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: .5px ridge silver;
+    padding: 20px;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 233px;
+
+}
+
+.item_name, .item_price {
+    font-size: 16px;
+    color: grey;
+}
+
+.item_price {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.item_none {
+    display: none;
+}
+
+.priceIcon {
+    cursor: pointer;
+}
+
+
+.side_menu {
+    width: 100%;
+    height: 1006px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+
+
+}
+
+.hiddenSide {
+    display: none;
+}
+
+.side_menu_item {
+    width: 50%;
+    min-height: 1006px;
+    background-color: gray;
+    opacity: 1;
+}
+
+.itemBox {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.itemImg {
+    width: 100px;
+    height: 100px;
+}
+
+.itemName {
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    color: silver;
+}
+.itemPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemRemove {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.side_close {
+    width: 50%;
+    height: 1006px;
+    background-color: black;
+    opacity: .6;
+
+}
+.totalPrice {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    margin-top: 50px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+#likeIcon {
+    font-size: 50px;
+    color: red;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}
+
+.disLikeIcon {
+    font-size: 50px;
+    color: black;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}
